@@ -30,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController passwordController = TextEditingController();
 
   Future<void> login() async {
-    final url = Uri.parse('http://10.0.2.2:3000/login'); // Android Emulator
+    final url = Uri.parse('http://localhost:3000/login'); // Android Emulator
 
     try {
       final response = await http.post(
